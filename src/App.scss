@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Container {
+  max-width: 1400px;
+  padding: 50px;
+  margin: 0 auto;
+}
+.App {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.currentWrapper,
+.daysWrapper {
+  .weathertemp {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+}
+
+.modal {
+  background-color: rgb(241, 79, 64);
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: bold;
+}

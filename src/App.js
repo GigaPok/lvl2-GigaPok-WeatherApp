@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './App.scss';
+import Current from './components/Current';
+import Daysforecast from './components/Daysforecast';
+import Search from './components/Search';
+import Modal from './components/Modal';
+
 
 function App() {
+
+  const [search, setSearch] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App Container">
+      <div>
+        <Search setSearch={setSearch} />
+        <Current city={search} />
+        <Modal show={false} />
+      </div>
+      <div>
+        <h2>8-day forecast</h2>
+        <Daysforecast city={search} />
+      </div>
     </div>
   );
 }
