@@ -1,0 +1,50 @@
+.modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(78, 68, 61, 0.555);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal-content {
+        background-color: #fff;
+        width: 400px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        h3 {
+            position: absolute;
+            top: 20px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.hourly-btn {
+    background-color: rgb(241, 79, 64);
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+}
